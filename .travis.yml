@@ -1,0 +1,10 @@
+language: C
+
+compiler: clang
+
+install: sudo apt-get install check
+
+script:
+        - make clean
+        - make
+        - ./geometry_test
